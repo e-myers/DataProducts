@@ -1,0 +1,61 @@
+---
+title: "Presentation1"
+author: "Me"
+date: "1/22/2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Double hash means new slide; text following it is title
+### Three hashes means top-level subheading
+#### Four hashes means second-level subheading
+Some content
+
+***
+Three asterisks means a slide without a title
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with ordered list
+
+1. Item a
+2. Item b
+
+## Slide with some formatting stuff
+
+Plain text 
+
+*italicization*
+
+**bold**
+
+Code signalled by single right-facing quotes (the thing on the upper left of the keyboard; forget name)
+`for (i %in% 1 : 10)`
+
+## Slide with code to actually run
+
+Triple little thingies at beginning and end.  Start ones are followed by {r} to signal R code.
+```{r, comment = '', echo = TRUE, eval = FALSE}
+head(mtcars)
+```
+
+## Slide with plot
+
+```{r, fig.align='center', fig.cap='Caption'}
+plot(mtcars$wt, mtcars$mpg, xlab='Weight', ylab='MPG')
+```
+
+
